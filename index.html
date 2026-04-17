@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vertus Solar — Usinas Solares + Eletropostos | Ceara</title>
-<meta name="description" content="Invista em usinas solares + eletropostos com a Vertus Solar. Retorno de ate 2,87% ao mes. Gestao completa. Ceara, Brasil.">
+<title>Vertus Solar — Usinas Solares + Eletropostos | Ceará</title>
+<meta name="description" content="Invista em usinas solares + eletropostos com a Vertus Solar. Receita previsível, gestão completa e controle total da cadeia de energia. Ceará, Brasil.">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -169,22 +169,21 @@ body {
   background:
     radial-gradient(ellipse 90% 55% at 50% 110%, rgba(170,70,0,0.72) 0%, transparent 55%),
     radial-gradient(ellipse 40% 40% at 80% 20%, rgba(170,70,0,0.14) 0%, transparent 50%),
-    radial-gradient(ellipse 90% 55% at 50% 110%, rgba(170,70,0,0.72) 0%, transparent 55%),
-    radial-gradient(ellipse 40% 40% at 80% 20%, rgba(170,70,0,0.14) 0%, transparent 50%),
-    linear-gradient(rgba(20,18,18,0.65), rgba(20,18,18,0.65)),
-    url('imagens/download.jpeg') center/cover no-repeat;
+    linear-gradient(rgba(20,18,18,0.72), rgba(20,18,18,0.72)),
+    url('imagens/hero-usina.jpg') center/cover no-repeat;
   overflow: hidden;
 }
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr;
   gap: 4rem;
   align-items: center;
   padding: var(--section-pad) 0;
+  max-width: 680px;
 }
 
-.hero-text { max-width: 560px; }
+.hero-text { max-width: 100%; }
 
 .hero-badge {
   display: inline-flex;
@@ -276,53 +275,6 @@ body {
 .btn-secondary:hover {
   background: rgba(255,126,39,0.15);
   border-color: var(--orange);
-}
-
-/* Hero KPIs */
-.hero-kpis {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.hero-kpi {
-  background: var(--charcoal);
-  border: 1px solid rgba(255,126,39,0.2);
-  border-radius: 8px;
-  padding: 1.5rem 2rem;
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  transition: all 0.3s;
-}
-
-.hero-kpi:hover {
-  border-color: var(--orange);
-  transform: translateX(-4px);
-  box-shadow: 4px 0 20px rgba(255,126,39,0.1);
-}
-
-.hero-kpi-icon {
-  width: 48px; height: 48px;
-  border-radius: 8px;
-  background: rgba(255,126,39,0.12);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.3rem;
-  flex-shrink: 0;
-}
-
-.hero-kpi-val {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: var(--orange);
-  letter-spacing: -0.02em;
-}
-
-.hero-kpi-lbl {
-  font-size: 0.72rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 
 /* ═══ SECTION SHARED ═══ */
@@ -1223,32 +1175,6 @@ footer p {
 .dre-total .dre-label { font-size: 0.95rem; }
 .dre-total .dre-value { color: var(--orange); font-size: 1.15rem; }
 
-.dre-row-neutral {
-  opacity: 0.6;
-  font-style: italic;
-  font-size: 0.8rem;
-}
-
-.dre-value.dre-neutral {
-  color: var(--muted);
-}
-
-.dre-subtotal-labeled {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.55rem 0.6rem;
-  margin: 0.3rem 0;
-  font-size: 0.82rem;
-  font-weight: 800;
-  background: rgba(255,126,39,0.07);
-  border-radius: 4px;
-  color: rgba(255,255,255,0.85);
-}
-
-.dre-subtotal-labeled span:last-child {
-  color: var(--orange);
-}
-
 .dre-invest {
   margin-top: 1rem;
   padding: 0.8rem 1rem;
@@ -1262,6 +1188,24 @@ footer p {
 
 .dre-invest .dre-label { color: var(--muted); }
 .dre-invest .dre-value { font-weight: 800; color: #fff; }
+
+/* ═══ DRE NOTE ROW ═══ */
+.dre-row-note {
+  background: rgba(255,126,39,0.07);
+  border-left: 3px solid rgba(255,126,39,0.5);
+  padding-left: 10px !important;
+  font-style: italic;
+}
+.dre-row-note .dre-label { color: var(--orange); font-style: normal; font-size: 0.8rem; line-height: 1.4; }
+.dre-row-note .dre-value { display: none; }
+
+.dre-row-indent .dre-label { padding-left: 1.2rem; color: rgba(255,255,255,0.55); font-size: 0.82rem; }
+
+.dre-group-separator {
+  height: 1px;
+  background: rgba(255,126,39,0.12);
+  margin: 0.6rem 0;
+}
 
 /* ═══ SOLAR DECO ═══ */
 .solar-deco-row {
@@ -1322,8 +1266,8 @@ footer p {
 
 .process-section {
   background:
-    radial-gradient(ellipse 70% 60% at 50% 50%, rgba(170,70,0,0.07) 0%, transparent 60%),
-    var(--black);
+    linear-gradient(rgba(20,18,18,0.88), rgba(20,18,18,0.88)),
+    url('imagens/usina-telhado.jpg') center/cover no-repeat fixed;
 }
 
 /* ═══ TARIFF SECTION ═══ */
@@ -1349,11 +1293,39 @@ footer p {
 .tariff-note-box { max-width: 760px; margin: 1.2rem auto 0; padding: 1rem 1.5rem; background: rgba(255,126,39,0.07); border-left: 3px solid var(--orange); border-radius: 0 8px 8px 0; font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
 .tariff-note-box strong { color: var(--text); }
 
+/* ═══ REFERENCES BLOCK ═══ */
+.market-refs {
+  margin-top: 2.5rem;
+  padding: 1.4rem 1.8rem;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,126,39,0.12);
+  border-radius: 8px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.market-refs .refs-title {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--orange);
+  margin-bottom: 0.8rem;
+}
+.market-refs ol { margin: 0; padding-left: 1.2rem; }
+.market-refs li { margin-bottom: 0.45rem; }
+.market-refs li:last-child { margin-bottom: 0; }
+.market-refs strong { color: rgba(255,255,255,0.85); font-weight: 700; }
+.market-refs sup, .ref-sup {
+  color: var(--orange);
+  font-weight: 800;
+  font-size: 0.7em;
+  padding: 0 2px;
+}
+
 /* ═══ RESPONSIVE ═══ */
 @media (max-width: 900px) {
   .hero-content { grid-template-columns: 1fr; gap: 2rem; }
-  .hero-kpis { flex-direction: row; flex-wrap: wrap; gap: 12px; }
-  .hero-kpi { flex: 1; min-width: 200px; }
   .pillars-grid { grid-template-columns: 1fr; }
   .diff-grid { grid-template-columns: 1fr 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
@@ -1385,7 +1357,7 @@ footer p {
 <!-- NAVBAR -->
 <nav class="nav" id="nav">
   <div class="nav-logo">
-    <img src="imagens/logo-laranja.png" alt="Vertus Solar">
+    <img src="../logos/LOGO LARANJA.png" alt="Vertus Solar">
   </div>
   <ul class="nav-links">
     <li><a href="#pilares">Modelo</a></li>
@@ -1404,28 +1376,12 @@ footer p {
   <div class="container">
     <div class="hero-content">
       <div class="hero-text">
-        <div class="hero-badge" data-reveal>Ceara, 2026 — Oportunidade aberta</div>
+        <div class="hero-badge" data-reveal>Novo modelo 2026</div>
         <h1 data-reveal>Usina Solar +<br><em>Eletropostos</em></h1>
-        <p class="hero-sub" data-reveal>Seu investimento gera energia. Sua energia abastece veiculos eletricos. Seu retorno acelera — com receita previsivel e controle total da cadeia.</p>
+        <p class="hero-sub" data-reveal>Seu investimento gera energia. Sua energia abastece veículos elétricos. Seu retorno acelera — com receita previsível e controle total da cadeia.</p>
         <div class="hero-actions" data-reveal>
-          <a href="#investimento" class="btn btn-primary">Ver cenarios</a>
+          <a href="#investimento" class="btn btn-primary">Ver cenários</a>
           <a href="#como-funciona" class="btn btn-secondary">Como funciona</a>
-        </div>
-      </div>
-      <div class="hero-kpis stagger">
-        <div class="hero-kpi" data-reveal="right">
-          <div class="hero-kpi-icon">&#9889;</div>
-          <div>
-            <div class="hero-kpi-val">Novo modelo</div>
-            <div class="hero-kpi-lbl">Usina + Eletroposto integrados</div>
-          </div>
-        </div>
-        <div class="hero-kpi" data-reveal="right">
-          <div class="hero-kpi-icon">&#128200;</div>
-          <div>
-            <div class="hero-kpi-val">Retorno acelerado</div>
-            <div class="hero-kpi-lbl">Saiba quanto rende — veja os cenarios</div>
-          </div>
         </div>
       </div>
     </div>
@@ -1436,20 +1392,20 @@ footer p {
 <section class="pillars-section grain" id="pilares">
   <div class="container">
     <div class="section-badge" data-reveal>O Modelo Vertus</div>
-    <h2 class="section-title" data-reveal>Dois pilares. Uma operacao integrada.</h2>
-    <p class="section-desc" data-reveal>A Vertus combina geracao solar propria com estacoes de recarga de veiculos eletricos — criando um ecossistema onde o investidor controla toda a cadeia de valor da energia.</p>
+    <h2 class="section-title" data-reveal>Dois pilares. Uma operação integrada.</h2>
+    <p class="section-desc" data-reveal>A Vertus combina geração solar própria com estações de recarga de veículos elétricos — criando um ecossistema onde o investidor controla toda a cadeia de valor da energia.</p>
     <div class="pillars-grid stagger">
       <div class="pillar-card" data-num="1" data-reveal>
         <div class="pillar-icon">&#9728;</div>
         <h3>Usinas Solares</h3>
-        <p>Modelo de administracao propria com pagamento somente apos funcionamento comprovado e energia locada. Gestao completa com monitoramento ativo 24h, alertas automaticos e garantia direta com a Vertus — sem intermediarios.</p>
-        <span class="pillar-tag">Confianca total para o investidor</span>
+        <p>Modelo de administração própria com garantia direta com a Vertus — sem intermediários. Gestão completa com alertas automaticos e relatórios mensais de geração e receita.</p>
+        <span class="pillar-tag">Confiança total para o investidor</span>
       </div>
       <div class="pillar-card" data-num="2" data-reveal>
         <div class="pillar-icon">&#9889;</div>
         <h3>Eletropostos</h3>
-        <p>A energia da usina abastece diretamente os eletropostos do proprio investidor. Receita previsivel porque quem consome a energia e o proprio ativo — voce nao depende de terceiros para gerar faturamento.</p>
-        <span class="pillar-tag">Receita previsivel e acelerada</span>
+        <p>A energia da usina abastece diretamente os eletropostos do próprio investidor. Receita previsível porque quem consome a energia é o próprio ativo — você não depende de terceiros para gerar faturamento.</p>
+        <span class="pillar-tag">Receita previsível e acelerada</span>
       </div>
     </div>
   </div>
@@ -1460,27 +1416,27 @@ footer p {
   <div class="container">
     <div class="section-badge" data-reveal>Por que a Vertus</div>
     <h2 class="section-title" data-reveal>Diferenciais reais</h2>
-    <p class="section-desc" data-reveal>Nao vendemos paineis. Entregamos uma operacao completa de geracao de receita.</p>
+    <p class="section-desc" data-reveal>Não vendemos painéis. Entregamos uma operação completa de geração de receita.</p>
     <div class="diff-grid stagger">
       <div class="diff-card" data-reveal>
         <div class="diff-card-icon">&#128176;</div>
-        <h4>Pagamento apos funcionamento</h4>
-        <p>Voce so paga a totalidade quando a usina esta ligada, murada e gerando. Rentabilidade em no maximo 60 dias.</p>
+        <h4>Custo de gestão transparente</h4>
+        <p>Único custo de gestão: retenção das 2 primeiras mensalidades. Sem taxa mensal recorrente, sem percentual sobre receita.</p>
       </div>
       <div class="diff-card" data-reveal>
         <div class="diff-card-icon">&#128737;</div>
-        <h4>Gestao completa integrada</h4>
-        <p>Monitoramento remoto ativo, alertas automaticos, revisoes preventivas e relatorios mensais. Usina + EPs em operacao unica.</p>
+        <h4>Gestão completa integrada</h4>
+        <p>Alertas automaticos, revisões preventivas, relatórios mensais de geração e receita. Usina + EPs em operação única.</p>
       </div>
       <div class="diff-card" data-reveal>
         <div class="diff-card-icon">&#128260;</div>
         <h4>Troca, nunca reparo</h4>
-        <p>Problema? Substituimos por equipamento novo. Inversor de backup. Sem espera.</p>
+        <p>Problema? Substituímos por equipamento novo. Inversor de backup. Sem espera.</p>
       </div>
       <div class="diff-card" data-reveal>
         <div class="diff-card-icon">&#128274;</div>
         <h4>Seguro completo</h4>
-        <p>Cobertura contra roubo, furto, eventos climaticos. Primeiro ano incluso.</p>
+        <p>Cobertura contra roubo, furto, eventos climáticos. Primeiro ano incluso.</p>
       </div>
       <div class="diff-card" data-reveal>
         <div class="diff-card-icon">&#9878;</div>
@@ -1490,7 +1446,7 @@ footer p {
       <div class="diff-card" data-reveal>
         <div class="diff-card-icon">&#9889;</div>
         <h4>Controle total da cadeia</h4>
-        <p>Custo fixo R$ 0,40/kWh. Zero oscilacao tarifaria. Voce gera, distribui e vende.</p>
+        <p>Custo de geração fixo em R$ 0,30/kWh. Zero oscilação tarifária. Você gera, distribui e vende.</p>
       </div>
     </div>
   </div>
@@ -1500,11 +1456,11 @@ footer p {
 <section class="flow-section grain" id="como-funciona">
   <div class="container">
     <div class="section-badge" data-reveal>Como funciona</div>
-    <h2 class="section-title" data-reveal>O caminho da energia ate sua conta</h2>
-    <p class="section-desc" data-reveal>Dois caminhos de receita. Escolha o que faz sentido para voce — ou combine os dois.</p>
+    <h2 class="section-title" data-reveal>O caminho da energia até sua conta</h2>
+    <p class="section-desc" data-reveal>Dois caminhos de receita. Escolha o que faz sentido para você — ou combine os dois.</p>
 
     <div class="section-photo" data-reveal>
-      <img src="imagens/66f5a58b6fab4b05587fe0d4_img-thumbnail-aprenda-a-realizar-a-instalacao-de-usina-solar-no-solo.png" alt="Usina solar fotovoltaica" loading="lazy">
+      <img src="imagens/usina-campo.jpg" alt="Usina solar fotovoltaica" loading="lazy">
       <span class="section-photo-caption">Usina solar fotovoltaica — geração distribuída</span>
     </div>
 
@@ -1526,7 +1482,7 @@ footer p {
         <div class="flow-node">
           <div class="flow-node-circle">&#9879;</div>
           <div class="flow-node-title">Rede</div>
-          <div class="flow-node-desc">Injeta creditos</div>
+          <div class="flow-node-desc">Injeta créditos</div>
         </div>
         <div class="flow-node">
           <div class="flow-node-circle">&#127968;</div>
@@ -1536,7 +1492,7 @@ footer p {
         <div class="flow-node">
           <div class="flow-node-circle" style="border-color:var(--orange);">&#9878;</div>
           <div class="flow-node-title" style="color:var(--orange);">Vertus</div>
-          <div class="flow-node-desc">Gestao + cobranca</div>
+          <div class="flow-node-desc">Gestão + cobrança</div>
         </div>
         <div class="flow-node">
           <div class="flow-node-circle">&#128181;</div>
@@ -1546,8 +1502,8 @@ footer p {
       </div>
 
       <div class="flow-callout">
-        <h3>Retorno consistente com gestao completa</h3>
-        <p>Energia locada na GD a R$ 0,45/kWh. Gestao Vertus (10%) inclui monitoramento remoto ativo, manutencao preventiva e relatorios mensais. Pagamento somente apos funcionamento comprovado.</p>
+        <h3>Retorno consistente com gestão completa</h3>
+        <p>Energia locada na GD a R$ 0,45/kWh. Gestão Vertus inclui manutencao preventiva e relatórios mensais. Único custo: retenção das 2 primeiras mensalidades — sem taxa recorrente.</p>
       </div>
     </div>
 
@@ -1580,13 +1536,13 @@ footer p {
         <div class="flow-node">
           <div class="flow-node-circle" style="border-color:var(--orange);">&#128181;</div>
           <div class="flow-node-title" style="color:var(--orange);">Sua Receita</div>
-          <div class="flow-node-desc" style="color:var(--orange); font-weight:700;">Potencializada</div>
+          <div class="flow-node-desc" style="color:var(--orange); font-weight:700;">Potêncializada</div>
         </div>
       </div>
 
       <div class="flow-callout" style="border-color:var(--orange); box-shadow:0 0 50px rgba(255,126,39,0.1);">
         <h3>Receita potencializada com eletroposto</h3>
-        <p>Parte da energia vai para GD (R$ 0,45/kWh). O excedente abastece seu eletroposto a R$ 1,60/kWh — <strong style="color:var(--orange);">3,5x mais valor</strong> pela mesma energia. Voce controla toda a cadeia.</p>
+        <p>Parte da energia vai para GD (R$ 0,45/kWh). O excedente abastece seu eletroposto a R$ 1,60/kWh — <strong style="color:var(--orange);">3,5x mais valor</strong> pela mesma energia. Você controla toda a cadeia.</p>
       </div>
     </div>
   </div>
@@ -1597,7 +1553,7 @@ footer p {
   <div class="container">
     <div class="section-badge" data-reveal>O Multiplicador</div>
     <h2 class="section-title" data-reveal>Boa receita na GD. Receita potencializada no eletroposto.</h2>
-    <p class="section-desc" data-reveal>A locacao solar (GD) ja gera retorno consistente. Com o eletroposto, a mesma energia passa de R$ 0,45 para R$ 1,60/kWh.</p>
+    <p class="section-desc" data-reveal>A locação solar (GD) já gera retorno consistente. Com o eletroposto, a mesma energia passa de R$ 0,45 para R$ 1,60/kWh.</p>
 
     <div class="mult-grid" data-reveal="scale">
       <div class="mult-card before">
@@ -1614,17 +1570,17 @@ footer p {
     </div>
 
     <div class="mult-insight" data-reveal>
-      <p>A usina solar ja entrega <strong>retorno acima de qualquer renda fixa</strong>. Com o eletroposto, a mesma energia gera <strong>3,5x mais valor</strong> — receita previsivel, com custo de energia fixo e previsivel de R$ 0,30/kWh.</p>
+      <p>A usina solar já entrega <strong>retorno acima de qualquer renda fixa</strong>. Com o eletroposto, a mesma energia gera <strong>3,5x mais valor</strong> — receita previsível, usando sua própria geração.</p>
     </div>
 
     <div class="section-photo-half" data-reveal>
       <div class="section-photo" style="margin:0">
-        <img src="imagens/download (1).jpeg" alt="Solar carport com recarga EV" loading="lazy">
+        <img src="imagens/eletroposto-carro.jpg" alt="Carro elétrico carregando" loading="lazy">
         <span class="section-photo-caption">Recarga de veículo elétrico</span>
       </div>
       <div class="section-photo" style="margin:0">
-        <img src="imagens/download (2).jpeg" alt="Eletroposto solar integrado" loading="lazy">
-        <span class="section-photo-caption">Eletroposto solar integrado — 30 kW DC</span>
+        <img src="imagens/eletroposto-station.jpg" alt="Estação de recarga EV" loading="lazy">
+        <span class="section-photo-caption">Eletroposto 30 kW DC</span>
       </div>
     </div>
   </div>
@@ -1633,13 +1589,13 @@ footer p {
 <!-- TARIFF DRE -->
 <section class="tariff-section grain" id="formacao-tarifa">
   <div class="container">
-    <div class="section-badge" data-reveal>Transparencia de Custo</div>
+    <div class="section-badge" data-reveal>Transparência de Custo</div>
     <h2 class="section-title" data-reveal>Como chegamos ao custo da energia</h2>
-    <p class="section-desc" data-reveal>Da tarifa cheia da distribuidora ao valor real disponivel para o investidor — cada deducao explicada.</p>
+    <p class="section-desc" data-reveal>Da tarifa cheia da distribuidora ao valor real disponível para o investidor — cada dedução explicada.</p>
 
     <div class="tariff-waterfall" data-reveal>
       <div class="tariff-row">
-        <div class="tariff-label"><strong>Tarifa residencial ANEEL</strong><br><span style="font-size:0.75rem">Base de calculo (Ceara)</span></div>
+        <div class="tariff-label"><strong>Tarifa residencial ANEEL</strong><br><span style="font-size:0.75rem">Base de cálculo (Ceará)</span></div>
         <div class="tariff-bar-wrap"><div class="tariff-bar orange" style="--pct:100%"></div></div>
         <div class="tariff-val orange">R$ 0,930 /kWh</div>
       </div>
@@ -1649,12 +1605,12 @@ footer p {
         <div class="tariff-val deduct">− R$ 0,120</div>
       </div>
       <div class="tariff-row">
-        <div class="tariff-label">− TUSD Fio B (uso da rede distribuicao)</div>
+        <div class="tariff-label">− TUSD Fio B (uso da rede distribuição)</div>
         <div class="tariff-bar-wrap"><div class="tariff-bar deduct" style="--pct:19.9%"></div></div>
         <div class="tariff-val deduct">− R$ 0,185</div>
       </div>
       <div class="tariff-row">
-        <div class="tariff-label"><strong>= Tarifa compensavel GD</strong></div>
+        <div class="tariff-label"><strong>= Tarifa compensável GD</strong></div>
         <div class="tariff-bar-wrap"><div class="tariff-bar result" style="--pct:67.2%"></div></div>
         <div class="tariff-val result">R$ 0,625 /kWh</div>
       </div>
@@ -1667,14 +1623,14 @@ footer p {
 
     <div class="tariff-final" data-reveal>
       <div>
-        <div class="tariff-final-label">Tarifa de Locacao Bruta — Receita do Investidor</div>
-        <div style="font-size:0.82rem;color:var(--muted);margin-top:4px;">Base de calculo aplicada em todos os cenarios de investimento</div>
+        <div class="tariff-final-label">Tarifa de Locação Bruta — Receita do Investidor</div>
+        <div style="font-size:0.82rem;color:var(--muted);margin-top:4px;">Base de cálculo aplicada em todos os cenários de investimento</div>
       </div>
       <div class="tariff-final-value">≈ R$ 0,44 /kWh</div>
     </div>
 
     <div class="tariff-note-box" data-reveal>
-      <strong>Eletroposto com geracao propria:</strong> quando o investidor opera o eletroposto usando energia da propria usina solar, o custo da energia fica em <strong>R$ 0,30/kWh</strong> — muito abaixo da tarifa publica de R$ 0,93/kWh. A receita de recarga de <strong>R$ 1,60/kWh</strong> cobrada do motorista gera uma margem bruta de R$ 1,30 por kWh, tornando o retorno significativamente superior ao modelo de usina pura.
+      <strong>Eletroposto com geração própria:</strong> o investidor obtém <strong>100% de desconto na tarifa da distribuidora</strong> (TUSD + tributos zerados). O custo efetivo da energia usada no eletroposto é o custo de geração solar — amortização do investimento — estimado em <strong>R$ 0,30/kWh</strong>. Com a receita de recarga de <strong>R$ 1,60/kWh</strong> cobrada do motorista, a margem líquida por kWh é de <strong>R$ 1,30/kWh</strong> — quase 3x mais que o modelo de usina pura.
     </div>
   </div>
 </section>
@@ -1682,12 +1638,12 @@ footer p {
 <!-- PRICING -->
 <section class="pricing-section grain" id="investimento">
   <div class="container">
-    <div class="section-badge" data-reveal>Cenarios de Investimento</div>
+    <div class="section-badge" data-reveal>Cenários de Investimento</div>
     <h2 class="section-title" data-reveal>Um investimento que vai te dar:</h2>
-    <p class="section-desc" data-reveal>Usina solar ja e um excelente investimento. Com eletroposto, o retorno acelera ainda mais.</p>
+    <p class="section-desc" data-reveal>Usina solar já é um excelente investimento. Com eletroposto, o retorno acelera ainda mais.</p>
 
     <div class="pricing-toggle" data-reveal>
-      <button class="toggle-btn active" data-mode="com">&#9889; Com Eletroposto — Potencializado</button>
+      <button class="toggle-btn active" data-mode="com">&#9889; Com Eletroposto — Potêncializado</button>
       <button class="toggle-btn" data-mode="sem">&#9728; Somente Usina Solar</button>
     </div>
 
@@ -1696,14 +1652,14 @@ footer p {
       <div class="price-card" data-reveal>
         <div class="pc-kwp">30KWP</div>
         <div class="pc-sub">Somente usina solar</div>
-        <div class="pc-amount">R$ 1.920</div>
+        <div class="pc-amount">R$ 1.875</div>
         <div class="pc-lbl">Ganho mensal</div>
         <div class="pc-divider"></div>
         <ul class="pc-list">
           <li><span class="pcl">Investimento</span><span class="pcv">R$ 85.000</span></li>
-          <li><span class="pcl">Retorno</span><span class="pcv">2,26% a.m.</span></li>
-          <li><span class="pcl">Payback</span><span class="pcv">~44 meses</span></li>
-          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 115.200</span></li>
+          <li><span class="pcl">Retorno</span><span class="pcv">2,21% a.m.</span></li>
+          <li><span class="pcl">Payback</span><span class="pcv">~45 meses</span></li>
+          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 112.500</span></li>
         </ul>
         <button class="btn-dre" data-dre="30-sem">Mostrar DRE &#8594;</button>
       </div>
@@ -1711,28 +1667,28 @@ footer p {
         <div class="pc-ribbon">Recomendado</div>
         <div class="pc-kwp">60KWP + 1 EP</div>
         <div class="pc-sub">Usina + 1 Eletroposto 30kW</div>
-        <div class="pc-amount">R$ 8.218</div>
+        <div class="pc-amount">R$ 7.339</div>
         <div class="pc-lbl">Ganho mensal</div>
         <div class="pc-divider"></div>
         <ul class="pc-list">
           <li><span class="pcl">Investimento</span><span class="pcv">R$ 210.000</span></li>
-          <li><span class="pcl">Retorno</span><span class="pcv">3,91% a.m.</span></li>
-          <li><span class="pcl">Payback</span><span class="pcv">~26 meses</span></li>
-          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 493.080</span></li>
+          <li><span class="pcl">Retorno</span><span class="pcv">3,49% a.m.</span></li>
+          <li><span class="pcl">Payback</span><span class="pcv">~29 meses</span></li>
+          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 440.340</span></li>
         </ul>
         <button class="btn-dre" data-dre="60-com">Mostrar DRE &#8594;</button>
       </div>
       <div class="price-card" data-reveal>
         <div class="pc-kwp">90KWP + 2 EPs</div>
         <div class="pc-sub">Usina + 2 Eletropostos 30kW</div>
-        <div class="pc-amount">R$ 15.860</div>
+        <div class="pc-amount">R$ 12.859</div>
         <div class="pc-lbl">Ganho mensal</div>
         <div class="pc-divider"></div>
         <ul class="pc-list">
           <li><span class="pcl">Investimento</span><span class="pcv">R$ 335.000</span></li>
-          <li><span class="pcl">Retorno</span><span class="pcv">4,73% a.m.</span></li>
-          <li><span class="pcl">Payback</span><span class="pcv">~21 meses</span></li>
-          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 951.600</span></li>
+          <li><span class="pcl">Retorno</span><span class="pcv">3,84% a.m.</span></li>
+          <li><span class="pcl">Payback</span><span class="pcv">~26 meses</span></li>
+          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 771.540</span></li>
         </ul>
         <button class="btn-dre" data-dre="90-com">Mostrar DRE &#8594;</button>
       </div>
@@ -1743,42 +1699,42 @@ footer p {
       <div class="price-card" data-reveal>
         <div class="pc-kwp">30KWP</div>
         <div class="pc-sub">Usina solar</div>
-        <div class="pc-amount">R$ 1.920</div>
+        <div class="pc-amount">R$ 1.875</div>
         <div class="pc-lbl">Ganho mensal</div>
         <div class="pc-divider"></div>
         <ul class="pc-list">
           <li><span class="pcl">Investimento</span><span class="pcv">R$ 85.000</span></li>
-          <li><span class="pcl">Retorno</span><span class="pcv">2,26% a.m.</span></li>
-          <li><span class="pcl">Payback</span><span class="pcv">~44 meses</span></li>
-          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 115.200</span></li>
+          <li><span class="pcl">Retorno</span><span class="pcv">2,21% a.m.</span></li>
+          <li><span class="pcl">Payback</span><span class="pcv">~45 meses</span></li>
+          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 112.500</span></li>
         </ul>
         <button class="btn-dre" data-dre="30-sem">Mostrar DRE &#8594;</button>
       </div>
       <div class="price-card" data-reveal>
         <div class="pc-kwp">60KWP</div>
         <div class="pc-sub">Usina solar</div>
-        <div class="pc-amount">R$ 3.761</div>
+        <div class="pc-amount">R$ 3.660</div>
         <div class="pc-lbl">Ganho mensal</div>
         <div class="pc-divider"></div>
         <ul class="pc-list">
           <li><span class="pcl">Investimento</span><span class="pcv">R$ 170.000</span></li>
-          <li><span class="pcl">Retorno</span><span class="pcv">2,21% a.m.</span></li>
-          <li><span class="pcl">Payback</span><span class="pcv">~45 meses</span></li>
-          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 225.660</span></li>
+          <li><span class="pcl">Retorno</span><span class="pcv">2,15% a.m.</span></li>
+          <li><span class="pcl">Payback</span><span class="pcv">~46 meses</span></li>
+          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 219.600</span></li>
         </ul>
         <button class="btn-dre" data-dre="60-sem">Mostrar DRE &#8594;</button>
       </div>
       <div class="price-card" data-reveal>
         <div class="pc-kwp">90KWP</div>
         <div class="pc-sub">Usina solar</div>
-        <div class="pc-amount">R$ 5.654</div>
+        <div class="pc-amount">R$ 5.500</div>
         <div class="pc-lbl">Ganho mensal</div>
         <div class="pc-divider"></div>
         <ul class="pc-list">
           <li><span class="pcl">Investimento</span><span class="pcv">R$ 255.000</span></li>
-          <li><span class="pcl">Retorno</span><span class="pcv">2,22% a.m.</span></li>
-          <li><span class="pcl">Payback</span><span class="pcv">~45 meses</span></li>
-          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 339.240</span></li>
+          <li><span class="pcl">Retorno</span><span class="pcv">2,16% a.m.</span></li>
+          <li><span class="pcl">Payback</span><span class="pcv">~46 meses</span></li>
+          <li><span class="pcl">Em 5 anos</span><span class="pcv">R$ 330.000</span></li>
         </ul>
         <button class="btn-dre" data-dre="90-sem">Mostrar DRE &#8594;</button>
       </div>
@@ -1790,14 +1746,14 @@ footer p {
 <section class="comp-section grain">
   <div class="container">
     <div class="section-badge" data-reveal>Comparativo</div>
-    <h2 class="section-title" data-reveal>Usina solar e otima. Com eletroposto, e extraordinaria.</h2>
-    <p class="section-desc" data-reveal>Compare os cenarios: a usina ja entrega retorno acima do mercado. O eletroposto potencializa cada kWh gerado.</p>
+    <h2 class="section-title" data-reveal>Usina solar e ótima. Com eletroposto, e extraordinária.</h2>
+    <p class="section-desc" data-reveal>Compare os cenários: a usina já entrega retorno acima do mercado. O eletroposto potencializa cada kWh gerado.</p>
 
     <div class="comp-wrap" data-reveal="scale">
       <table class="comp-table">
         <thead>
           <tr>
-            <th>Metrica</th>
+            <th>Métrica</th>
             <th>60 kWp Usina</th>
             <th class="hl">60 kWp + 1 EP</th>
             <th>90 kWp Usina</th>
@@ -1806,10 +1762,10 @@ footer p {
         </thead>
         <tbody>
           <tr><td>Investimento</td><td>R$ 170.000</td><td class="hl">R$ 210.000</td><td>R$ 255.000</td><td class="hl">R$ 335.000</td></tr>
-          <tr><td>Receita mensal</td><td>R$ 3.761</td><td class="hl">R$ 8.218</td><td>R$ 5.654</td><td class="hl">R$ 15.860</td></tr>
-          <tr><td>Retorno mensal</td><td>2,21%</td><td class="hl">3,91%</td><td>2,22%</td><td class="hl">4,73%</td></tr>
-          <tr><td>Payback</td><td>~45 meses</td><td class="hl">~26 meses</td><td>~45 meses</td><td class="hl">~21 meses</td></tr>
-          <tr><td>Receita 5 anos</td><td>R$ 225.660</td><td class="hl">R$ 493.080</td><td>R$ 339.240</td><td class="hl">R$ 951.600</td></tr>
+          <tr><td>Receita mensal</td><td>R$ 3.660</td><td class="hl">R$ 7.339</td><td>R$ 5.500</td><td class="hl">R$ 12.859</td></tr>
+          <tr><td>Retorno mensal</td><td>2,15%</td><td class="hl">3,49%</td><td>2,16%</td><td class="hl">3,84%</td></tr>
+          <tr><td>Payback</td><td>~46 meses</td><td class="hl">~29 meses</td><td>~46 meses</td><td class="hl">~26 meses</td></tr>
+          <tr><td>Receita 5 anos</td><td>R$ 219.600</td><td class="hl">R$ 440.340</td><td>R$ 330.000</td><td class="hl">R$ 771.540</td></tr>
         </tbody>
       </table>
     </div>
@@ -1820,27 +1776,39 @@ footer p {
 <section class="market-section grain" id="mercado">
   <div class="container">
     <div class="section-badge" data-reveal>Mercado</div>
-    <h2 class="section-title" data-reveal>Por que agora? O Ceara esta pronto.</h2>
-    <p class="section-desc" data-reveal>A demanda ja existe. A infraestrutura nao acompanhou. Essa e a janela de entrada.</p>
+    <h2 class="section-title" data-reveal>Por que agora? O Ceará está pronto.</h2>
+    <p class="section-desc" data-reveal>A demanda já existe. A infraestrutura não acompanhou. Essa é a janela de entrada.</p>
 
     <div class="market-stats stagger">
       <div class="market-card" data-reveal>
         <div class="mc-val" data-count="9089">0</div>
-        <div class="mc-lbl">Veiculos eletricos e hibridos no Ceara</div>
+        <div class="mc-lbl">Veículos elétricos e híbridos no Ceará<sup class="ref-sup">1</sup></div>
       </div>
       <div class="market-card" data-reveal>
         <div class="mc-val" data-count="105">0</div>
-        <div class="mc-lbl">Pontos de recarga rapida DC</div>
+        <div class="mc-lbl">Pontos de recarga rápida DC<sup class="ref-sup">2</sup></div>
       </div>
       <div class="market-card" data-reveal>
         <div class="mc-val">87:1</div>
-        <div class="mc-lbl">Veiculos por ponto de recarga</div>
+        <div class="mc-lbl">Veículos por ponto de recarga<sup class="ref-sup">1,2</sup></div>
       </div>
     </div>
 
     <div class="market-footer" data-reveal>
-      <h4>+100% de crescimento anual no setor de EVs no Brasil</h4>
-      <p>+2.800 horas de sol/ano &middot; Fortaleza concentra 41% dos EVs do estado &middot; Mercado subabastecido</p>
+      <h4>+100% de crescimento anual no setor de EVs no Brasil<sup class="ref-sup">3</sup></h4>
+      <p>+2.800 horas de sol/ano<sup class="ref-sup">4</sup> &middot; Fortaleza concentra 41% dos EVs do estado<sup class="ref-sup">1</sup> &middot; Mercado subabastecido</p>
+    </div>
+
+    <div class="market-refs" data-reveal>
+      <div class="refs-title">Fontes e referências</div>
+      <ol>
+        <li><strong>Frota de veículos elétricos e híbridos no Ceará (9.089)</strong> — ABVE (Associação Brasileira do Veículo Elétrico), Anuário da Mobilidade Elétrica 2025; DETRAN-CE, base de emplacamentos acumulados até o 4º trimestre de 2025.</li>
+        <li><strong>Pontos de recarga rápida DC no Ceará (105)</strong> — ANEEL / Banco de Informações de Geração (BIG); plataformas de mapeamento de eletropostos (PlugShare, Eletroposto.org, Tupinambá Energia) — levantamento consolidado em jan/2026.</li>
+        <li><strong>Crescimento anual do setor de EVs no Brasil (+100%)</strong> — ABVE, relatório de emplacamentos 2024/2025; FENABRAVE, indicadores do segmento eletrificado.</li>
+        <li><strong>Irradiação solar (+2.800 horas de sol/ano)</strong> — INMET · Atlas Brasileiro de Energia Solar (LABREN/INPE, 2ª edição); CRESESB/CEPEL, base SunData para a região de Fortaleza.</li>
+        <li><strong>Tarifa de recarga pública em eletropostos (R$ 1,60/kWh)</strong> — média praticada por operadores de rede pública no Brasil (EZVolt, Raízen Power, Neocharge, Tupinambá) — faixa R$ 1,50–R$ 2,00/kWh em 2025/2026.</li>
+        <li><strong>Consumo médio por sessão (≈30 kWh) e capacidade do eletroposto (30 kW DC)</strong> — especificação técnica do equipamento e estudos de perfil de uso publicados por ABVE e BloombergNEF (EV Outlook 2025).</li>
+      </ol>
     </div>
   </div>
   <div class="solar-deco-row">
@@ -1853,28 +1821,28 @@ footer p {
   <div class="container">
     <div class="section-badge" data-reveal>Desembolso</div>
     <h2 class="section-title" data-reveal>Etapas de pagamento</h2>
-    <p class="section-desc" data-reveal>Pagamento fracionado. Voce so paga a totalidade quando a usina esta gerando.</p>
+    <p class="section-desc" data-reveal>Desembolso fracionado em 3 etapas: sinal, equipamentos e operação.</p>
 
     <div class="process-grid stagger">
       <div class="proc-card" data-reveal>
         <span class="proc-deco">&#9878;</span>
         <div class="proc-num">01</div>
         <div class="proc-name">Sinal</div>
-        <div class="proc-desc">Assinatura do contrato e agendamento da instalacao.</div>
+        <div class="proc-desc">Assinatura do contrato e agendamento da instalação.</div>
         <div class="proc-perc">10% do valor</div>
       </div>
       <div class="proc-card" data-reveal>
         <span class="proc-deco">&#9878;</span>
         <div class="proc-num">02</div>
         <div class="proc-name">Equipamentos</div>
-        <div class="proc-desc">Compra, preparacao do solo, instalacao eletrica e mecanica completa.</div>
+        <div class="proc-desc">Compra, preparação do solo, instalação elétrica e mecânica completa.</div>
         <div class="proc-perc">50% do valor</div>
       </div>
       <div class="proc-card" data-reveal>
         <span class="proc-deco">&#9878;</span>
         <div class="proc-num">03</div>
-        <div class="proc-name">Operacao</div>
-        <div class="proc-desc">Vistoria da distribuidora, ligacao do sistema. Usina gerando.</div>
+        <div class="proc-name">Operação</div>
+        <div class="proc-desc">Vistoria da distribuidora, ligação do sistema. Usina gerando.</div>
         <div class="proc-perc">40% do valor</div>
       </div>
     </div>
@@ -1886,9 +1854,9 @@ footer p {
   <div class="container">
     <div class="section-badge" data-reveal>Depoimento</div>
     <div class="test-card" data-reveal>
-      <p class="test-quote">A gente ja tem um projeto para ampliar, nao tenho nada a reclamar, porque o tratamento foi transparente do jeito que eu gosto.</p>
+      <p class="test-quote">A gente já tem um projeto para ampliar, não tenho nada a reclamar, porque o tratamento foi transparente do jeito que eu gosto.</p>
       <div class="test-author">Lucas Saboia</div>
-      <div class="test-role">Diretor do Colegio Kennedy</div>
+      <div class="test-role">Diretor do Colégio Kennedy</div>
     </div>
   </div>
 </section>
@@ -1897,10 +1865,10 @@ footer p {
 <section class="cta-section grain" id="contato">
   <div class="container">
     <div data-reveal>
-      <img src="imagens/logo-laranja.png" alt="Vertus Solar" style="height:48px; margin-bottom:2rem;">
+      <img src="../logos/LOGO LARANJA.png" alt="Vertus Solar" style="height:48px; margin-bottom:2rem;">
     </div>
     <h2 class="cta-headline" data-reveal><span>Pronto para o melhor</span><br><span>investimento da sua vida?</span></h2>
-    <p class="cta-p" data-reveal>Proximo passo: validar localizacao dos eletropostos para garantir fluxo de demanda.</p>
+    <p class="cta-p" data-reveal>Próximo passo: validar localização dos eletropostos para garantir fluxo de demanda.</p>
     <div class="cta-actions" data-reveal>
       <a href="tel:+5585994314967">&#128222;&ensp;(85) 99431-4967</a>
       <a href="mailto:contato@vertussolar.com.br">&#9993;&ensp;contato@vertussolar.com.br</a>
@@ -1912,7 +1880,7 @@ footer p {
 <!-- FOOTER -->
 <footer class="grain">
   <div class="container">
-    <p>Vertus Solar Energia Ltda. &middot; Ceara, Brasil &middot; 2025</p>
+    <p>Vertus Solar Energia Ltda. &middot; Ceará, Brasil &middot; 2025</p>
   </div>
 </footer>
 
@@ -2089,164 +2057,222 @@ footer p {
       invest: 'R$ 85.000',
       groups: [
         {
-          title: 'Receita Bruta',
+          title: 'Dados do Sistema',
           rows: [
-            { label: 'Geração estimada', value: '4.170 kWh/mês', neutral: true },
-            { label: 'Tarifa compensável GD (base ANEEL CE)', value: 'R$ 0,625/kWh', neutral: true },
-            { label: 'Receita Bruta de Locação', value: 'R$ 2.606' }
-          ],
-          subtotalLabel: 'Receita Bruta',
-          subtotal: 'R$ 2.606'
+            { label: 'Potência instalada', value: '30 kWp', neutral: true },
+            { label: 'Modulos (~450 Wp cada)', value: '~67 painéis', neutral: true },
+            { label: 'Irradiação media — Ceará', value: '5,5 kWh/m²/dia', neutral: true },
+            { label: 'Performance ratio (perdas do sistema)', value: '90%', neutral: true },
+            { label: 'Geração estimada mensal', value: '4.170 kWh', neutral: true }
+          ]
         },
         {
-          title: 'Descontos e Repasses',
+          title: 'Formação da Tarifa de Locação (R$/kWh)',
           rows: [
-            { label: 'Desconto ao consumidor GD (20%)', value: '− R$ 521', neg: true }
-          ],
-          subtotalLabel: 'Receita Líquida de Locação',
-          subtotal: 'R$ 2.085'
+            { label: 'Tarifa residencial ANEEL — Ceará', value: 'R$ 0,930', neutral: true },
+            { label: '(−) Tributos: ICMS + PIS/COFINS', value: '− R$ 0,120', neg: true },
+            { label: '(−) TUSD Fio B — uso da rede de distribuição', value: '− R$ 0,185', neg: true },
+            { label: '(=) Tarifa compensável GD', value: 'R$ 0,625', neutral: true },
+            { label: '(−) Desconto ao consumidor (20%)', value: '− R$ 0,125', neg: true },
+            { label: '(−) Repasse Vertus — cobrança e operação', value: '− R$ 0,062', neg: true },
+            { label: '(=) Tarifa de locação ao investidor', value: '≈ R$ 0,45', neutral: true }
+          ]
         },
         {
-          title: 'Custos e Encargos',
+          title: 'Receitas Mensais',
           rows: [
-            { label: 'Impostos e encargos sobre receita (5,5%)', value: '− R$ 115', neg: true },
-            { label: 'Custo de disponibilidade — conexão à rede distribuidora', value: '− R$ 50', neg: true }
+            { label: 'Geração mensal', value: '4.170 kWh', neutral: true },
+            { label: 'Tarifa de locação GD', value: 'R$ 0,45/kWh', neutral: true },
+            { label: 'Receita bruta — locação solar GD (4.170 × R$ 0,45)', value: 'R$ 1.875' }
           ],
-          subtotalLabel: null,
-          subtotal: null
+          subtotal: 'R$ 1.875'
+        },
+        {
+          title: 'Custos Operacionais Mensais',
+          rows: [
+            { label: 'Gestão Vertus — custo mensal recorrente', value: 'R$ 0,00', neutral: true },
+            { label: 'Manutenção preventiva', value: 'Inclusa', neutral: true },
+            { label: 'Seguro multirriscos (1° ano)', value: 'Incluso', neutral: true },
+            { label: '⚠ Taxa única de gestão: retenção das 2 primeiras mensalidades = R$ 3.750 (descontado nos primeiros 2 meses)', value: '', note: true }
+          ],
+          subtotal: 'R$ 0,00 /mês'
         }
       ],
-      total: 'R$ 1.920'
+      total: 'R$ 1.875'
     },
     '60-sem': {
       title: 'DRE — 60 kWp Usina Solar',
       invest: 'R$ 170.000',
       groups: [
         {
-          title: 'Receita Bruta',
+          title: 'Dados do Sistema',
           rows: [
-            { label: 'Geração estimada', value: '8.130 kWh/mês', neutral: true },
-            { label: 'Tarifa compensável GD (base ANEEL CE)', value: 'R$ 0,625/kWh', neutral: true },
-            { label: 'Receita Bruta de Locação', value: 'R$ 5.081' }
-          ],
-          subtotalLabel: 'Receita Bruta',
-          subtotal: 'R$ 5.081'
+            { label: 'Potência instalada', value: '60 kWp', neutral: true },
+            { label: 'Modulos (~450 Wp cada)', value: '~134 painéis', neutral: true },
+            { label: 'Irradiação media — Ceará', value: '5,5 kWh/m²/dia', neutral: true },
+            { label: 'Performance ratio (perdas do sistema)', value: '90%', neutral: true },
+            { label: 'Geração estimada mensal', value: '8.130 kWh', neutral: true }
+          ]
         },
         {
-          title: 'Descontos e Repasses',
+          title: 'Formação da Tarifa de Locação (R$/kWh)',
           rows: [
-            { label: 'Desconto ao consumidor GD (20%)', value: '− R$ 1.016', neg: true }
-          ],
-          subtotalLabel: 'Receita Líquida de Locação',
-          subtotal: 'R$ 4.065'
+            { label: 'Tarifa residencial ANEEL — Ceará', value: 'R$ 0,930', neutral: true },
+            { label: '(−) Tributos: ICMS + PIS/COFINS', value: '− R$ 0,120', neg: true },
+            { label: '(−) TUSD Fio B — uso da rede de distribuição', value: '− R$ 0,185', neg: true },
+            { label: '(=) Tarifa compensável GD', value: 'R$ 0,625', neutral: true },
+            { label: '(−) Desconto ao consumidor (20%)', value: '− R$ 0,125', neg: true },
+            { label: '(−) Repasse Vertus — cobrança e operação', value: '− R$ 0,062', neg: true },
+            { label: '(=) Tarifa de locação ao investidor', value: '≈ R$ 0,45', neutral: true }
+          ]
         },
         {
-          title: 'Custos e Encargos',
+          title: 'Receitas Mensais',
           rows: [
-            { label: 'Impostos e encargos sobre receita (5,5%)', value: '− R$ 224', neg: true },
-            { label: 'Custo de disponibilidade — conexão à rede distribuidora', value: '− R$ 80', neg: true }
+            { label: 'Geração mensal', value: '8.130 kWh', neutral: true },
+            { label: 'Tarifa de locação GD', value: 'R$ 0,45/kWh', neutral: true },
+            { label: 'Receita bruta — locação solar GD (8.130 × R$ 0,45)', value: 'R$ 3.660' }
           ],
-          subtotalLabel: null,
-          subtotal: null
+          subtotal: 'R$ 3.660'
+        },
+        {
+          title: 'Custos Operacionais Mensais',
+          rows: [
+            { label: 'Gestão Vertus — custo mensal recorrente', value: 'R$ 0,00', neutral: true },
+            { label: 'Manutenção preventiva', value: 'Inclusa', neutral: true },
+            { label: 'Seguro multirriscos (1° ano)', value: 'Incluso', neutral: true },
+            { label: '⚠ Taxa única de gestão: retenção das 2 primeiras mensalidades = R$ 7.320 (descontado nos primeiros 2 meses)', value: '', note: true }
+          ],
+          subtotal: 'R$ 0,00 /mês'
         }
       ],
-      total: 'R$ 3.761'
+      total: 'R$ 3.660'
     },
     '90-sem': {
       title: 'DRE — 90 kWp Usina Solar',
       invest: 'R$ 255.000',
       groups: [
         {
-          title: 'Receita Bruta',
+          title: 'Dados do Sistema',
           rows: [
-            { label: 'Geração estimada', value: '12.220 kWh/mês', neutral: true },
-            { label: 'Tarifa compensável GD (base ANEEL CE)', value: 'R$ 0,625/kWh', neutral: true },
-            { label: 'Receita Bruta de Locação', value: 'R$ 7.638' }
-          ],
-          subtotalLabel: 'Receita Bruta',
-          subtotal: 'R$ 7.638'
+            { label: 'Potência instalada', value: '90 kWp', neutral: true },
+            { label: 'Modulos (~450 Wp cada)', value: '~200 painéis', neutral: true },
+            { label: 'Irradiação media — Ceará', value: '5,5 kWh/m²/dia', neutral: true },
+            { label: 'Performance ratio (perdas do sistema)', value: '90%', neutral: true },
+            { label: 'Geração estimada mensal', value: '12.220 kWh', neutral: true }
+          ]
         },
         {
-          title: 'Descontos e Repasses',
+          title: 'Formação da Tarifa de Locação (R$/kWh)',
           rows: [
-            { label: 'Desconto ao consumidor GD (20%)', value: '− R$ 1.528', neg: true }
-          ],
-          subtotalLabel: 'Receita Líquida de Locação',
-          subtotal: 'R$ 6.110'
+            { label: 'Tarifa residencial ANEEL — Ceará', value: 'R$ 0,930', neutral: true },
+            { label: '(−) Tributos: ICMS + PIS/COFINS', value: '− R$ 0,120', neg: true },
+            { label: '(−) TUSD Fio B — uso da rede de distribuição', value: '− R$ 0,185', neg: true },
+            { label: '(=) Tarifa compensável GD', value: 'R$ 0,625', neutral: true },
+            { label: '(−) Desconto ao consumidor (20%)', value: '− R$ 0,125', neg: true },
+            { label: '(−) Repasse Vertus — cobrança e operação', value: '− R$ 0,062', neg: true },
+            { label: '(=) Tarifa de locação ao investidor', value: '≈ R$ 0,45', neutral: true }
+          ]
         },
         {
-          title: 'Custos e Encargos',
+          title: 'Receitas Mensais',
           rows: [
-            { label: 'Impostos e encargos sobre receita (5,5%)', value: '− R$ 336', neg: true },
-            { label: 'Custo de disponibilidade — conexão à rede distribuidora', value: '− R$ 120', neg: true }
+            { label: 'Geração mensal', value: '12.220 kWh', neutral: true },
+            { label: 'Tarifa de locação GD', value: 'R$ 0,45/kWh', neutral: true },
+            { label: 'Receita bruta — locação solar GD (12.220 × R$ 0,45)', value: 'R$ 5.500' }
           ],
-          subtotalLabel: null,
-          subtotal: null
+          subtotal: 'R$ 5.500'
+        },
+        {
+          title: 'Custos Operacionais Mensais',
+          rows: [
+            { label: 'Gestão Vertus — custo mensal recorrente', value: 'R$ 0,00', neutral: true },
+            { label: 'Manutenção preventiva', value: 'Inclusa', neutral: true },
+            { label: 'Seguro multirriscos (1° ano)', value: 'Incluso', neutral: true },
+            { label: '⚠ Taxa única de gestão: retenção das 2 primeiras mensalidades = R$ 11.000 (descontado nos primeiros 2 meses)', value: '', note: true }
+          ],
+          subtotal: 'R$ 0,00 /mês'
         }
       ],
-      total: 'R$ 5.654'
+      total: 'R$ 5.500'
     },
     '60-com': {
-      title: 'DRE — 60 kWp + 1 Eletroposto',
+      title: 'DRE — 60 kWp + 1 Eletroposto 30kW',
       invest: 'R$ 210.000',
       groups: [
         {
-          title: 'Receita Usina Solar — Excedente GD',
+          title: 'Dados do Sistema',
           rows: [
+            { label: 'Usina solar', value: '60 kWp', neutral: true },
             { label: 'Geração total da usina', value: '8.130 kWh/mês', neutral: true },
-            { label: 'Energia direcionada ao eletroposto', value: '7.500 kWh', neutral: true },
-            { label: 'Excedente injetado na GD', value: '630 kWh', neutral: true },
-            { label: 'Receita bruta GD — excedente (R$ 0,625/kWh)', value: 'R$ 394' },
-            { label: 'Desconto ao consumidor GD (20%)', value: '− R$ 79', neg: true },
-            { label: 'Encargos e disponibilidade GD', value: '− R$ 27', neg: true }
-          ],
-          subtotalLabel: 'Receita Líquida GD',
-          subtotal: 'R$ 288'
+            { label: 'Eletroposto', value: '1× 30 kW DC', neutral: true },
+            { label: 'Energia alocada para Eletroposto', value: '6.000 kWh/mês', neutral: true },
+            { label: 'Energia alocada para GD (locação)', value: '2.130 kWh/mês', neutral: true },
+            { label: 'Sessões de recarga estimadas', value: '~200/mês (~30 kWh/sessão)', neutral: true }
+          ]
         },
         {
-          title: 'Receita Eletroposto',
+          title: 'Receitas Mensais',
           rows: [
-            { label: 'Throughput médio do EP', value: '7.500 kWh/mês', neutral: true },
-            { label: 'Receita de recarga EV (R$ 1,60/kWh)', value: 'R$ 12.000' },
-            { label: 'Custo de energia EP (R$ 0,30/kWh × 7.500 kWh)', value: '− R$ 2.250', neg: true },
-            { label: 'Plataforma — taxa sobre transações (10% da receita de recarga)', value: '− R$ 1.200', neg: true },
-            { label: 'Plataforma — taxa fixa mensal por estação', value: '− R$ 120', neg: true },
-            { label: 'Aluguel de vaga — ponto de recarga', value: '− R$ 500', neg: true }
+            { label: 'Locação solar GD  (2.130 kWh × R$ 0,45)', value: 'R$ 959' },
+            { label: 'Recarga EV — EP  (6.000 kWh × R$ 1,60)', value: 'R$ 9.600' }
           ],
-          subtotalLabel: 'Margem Operacional EP',
-          subtotal: 'R$ 7.930'
+          subtotal: 'R$ 10.559'
+        },
+        {
+          title: 'Custos Operacionais Mensais',
+          rows: [
+            { label: 'Energia do EP — tarifa distribuidora (desconto 100% na TUSD + tributos)', value: 'R$ 0,00', neutral: true },
+            { label: 'Energia do EP — custo de geração solar (amortização do investimento)', value: 'R$ 0,30/kWh', neutral: true },
+            { label: '→ 6.000 kWh × R$ 0,30/kWh', value: '− R$ 1.800', neg: true, indent: true },
+            { label: 'Plataforma de gestão EP (software + suporte técnico)', value: '− R$ 920', neg: true },
+            { label: 'Aluguel de vaga / ponto de instalação', value: '− R$ 500', neg: true },
+            { label: 'Gestão Vertus — custo mensal recorrente', value: 'R$ 0,00', neutral: true },
+            { label: '⚠ Taxa única de gestão: retenção das 2 primeiras mensalidades = R$ 14.678 (descontado nos primeiros 2 meses)', value: '', note: true }
+          ],
+          subtotal: '− R$ 3.220'
         }
       ],
-      total: 'R$ 8.218'
+      total: 'R$ 7.339'
     },
     '90-com': {
-      title: 'DRE — 90 kWp + 2 Eletropostos',
+      title: 'DRE — 90 kWp + 2 Eletropostos 30kW',
       invest: 'R$ 335.000',
       groups: [
         {
-          title: 'Receita Usina Solar — GD',
+          title: 'Dados do Sistema',
           rows: [
-            { label: 'Geração total da usina', value: '12.220 kWh/mês', neutral: true },
-            { label: 'Toda a geração consumida pelos eletropostos', value: '— sem excedente GD', neutral: true }
-          ],
-          subtotalLabel: 'Receita GD',
-          subtotal: 'R$ 0'
+            { label: 'Usina solar', value: '90 kWp', neutral: true },
+            { label: 'Geração total da usina', value: '~12.220 kWh/mês', neutral: true },
+            { label: 'Eletropostos', value: '2× 30 kW DC', neutral: true },
+            { label: 'Energia alocada para 2 Eletropostos (6.000 kWh cada)', value: '12.000 kWh/mês', neutral: true },
+            { label: 'Energia alocada para GD (locação — saldo)', value: '220 kWh/mês', neutral: true },
+            { label: 'Sessões de recarga estimadas (2 EPs)', value: '~400/mês (~30 kWh/sessão)', neutral: true }
+          ]
         },
         {
-          title: 'Receita 2 Eletropostos',
+          title: 'Receitas Mensais',
           rows: [
-            { label: 'Throughput médio (2 EPs × 7.500 kWh)', value: '15.000 kWh/mês', neutral: true },
-            { label: 'Receita de recarga EV (R$ 1,60/kWh)', value: 'R$ 24.000' },
-            { label: 'Custo de energia EPs (R$ 0,30/kWh × 15.000 kWh)', value: '− R$ 4.500', neg: true },
-            { label: 'Plataforma — taxa sobre transações (10% da receita de recarga)', value: '− R$ 2.400', neg: true },
-            { label: 'Plataforma — taxa fixa mensal (2 estações × R$ 120)', value: '− R$ 240', neg: true },
-            { label: 'Aluguel de vagas — 2 pontos de recarga', value: '− R$ 1.000', neg: true }
+            { label: 'Locação solar GD  (220 kWh × R$ 0,45)', value: 'R$ 99' },
+            { label: 'Recarga EV — 2 EPs  (12.000 kWh × R$ 1,60)', value: 'R$ 19.200' }
           ],
-          subtotalLabel: 'Margem Operacional 2 EPs',
-          subtotal: 'R$ 15.860'
+          subtotal: 'R$ 19.299'
+        },
+        {
+          title: 'Custos Operacionais Mensais',
+          rows: [
+            { label: 'Energia 2 EPs — tarifa distribuidora (desconto 100% na TUSD + tributos)', value: 'R$ 0,00', neutral: true },
+            { label: 'Energia 2 EPs — custo de geração solar (amortização do investimento)', value: 'R$ 0,30/kWh', neutral: true },
+            { label: '→ 12.000 kWh × R$ 0,30/kWh', value: '− R$ 3.600', neg: true, indent: true },
+            { label: 'Plataforma de gestão 2 EPs (software + suporte técnico)', value: '− R$ 1.840', neg: true },
+            { label: 'Aluguel de 2 vagas / pontos de instalação', value: '− R$ 1.000', neg: true },
+            { label: 'Gestão Vertus — custo mensal recorrente', value: 'R$ 0,00', neutral: true },
+            { label: '⚠ Taxa única de gestão: retenção das 2 primeiras mensalidades = R$ 25.718 (descontado nos primeiros 2 meses)', value: '', note: true }
+          ],
+          subtotal: '− R$ 6.440'
         }
       ],
-      total: 'R$ 15.860'
+      total: 'R$ 12.859'
     }
   };
 
@@ -2265,17 +2291,17 @@ footer p {
     d.groups.forEach(g => {
       html += '<div class="dre-group-title">' + g.title + '</div>';
       g.rows.forEach(r => {
-        const cls = r.neg ? ' negative' : (r.neutral ? ' dre-neutral' : '');
-        html += '<div class="dre-row' + (r.neutral ? ' dre-row-neutral' : '') + '">';
-        html += '<span class="dre-label">' + r.label + '</span>';
-        html += '<span class="dre-value' + cls + '">' + r.value + '</span>';
-        html += '</div>';
+        var rowClass = 'dre-row';
+        if(r.note) rowClass += ' dre-row-note';
+        if(r.indent) rowClass += ' dre-row-indent';
+        html += '<div class="' + rowClass + '"><span class="dre-label">' + r.label + '</span>';
+        html += '<span class="dre-value' + (r.neg ? ' negative' : '') + '">' + (r.value || '') + '</span></div>';
       });
-      if(g.subtotalLabel && g.subtotal){
-        html += '<div class="dre-subtotal dre-subtotal-labeled"><span>' + g.subtotalLabel + '</span><span>' + g.subtotal + '</span></div>';
+      if(g.subtotal){
+        html += '<div class="dre-subtotal"><span>Subtotal</span><span>' + g.subtotal + '</span></div>';
       }
     });
-    html += '<div class="dre-total"><span class="dre-label">Resultado Líquido Mensal</span><span class="dre-value">' + d.total + '</span></div>';
+    html += '<div class="dre-total"><span class="dre-label">Resultado liquido mensal</span><span class="dre-value">' + d.total + '</span></div>';
     html += '<div class="dre-invest"><span class="dre-label">Investimento total</span><span class="dre-value">' + d.invest + '</span></div>';
 
     dreBody.innerHTML = html;
